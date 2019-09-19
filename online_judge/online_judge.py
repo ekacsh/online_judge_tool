@@ -1,6 +1,6 @@
 import urllib3
 import requests
-
+import os
 
 class OnlineJudge(object):
 
@@ -11,7 +11,8 @@ class OnlineJudge(object):
         self.password = ''
         self.remember = False
 
-        self.sessions_path = 'data/sessions'
+        home_path = os.getenv('HOME')
+        self.sessions_path = f'{home_path}/.cache/online_judge_tool/sessions'
         self.home_url = ''
         self.submit_url = ''
 
