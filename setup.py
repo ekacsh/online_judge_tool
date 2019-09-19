@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="example-pkg-your-username",
+    name="online_judge_tool",
     version="0.0.1",
     author="Pabolo Vinícius da Rosa Pires",
     author_email="pabolo18@gmail.com",
@@ -18,6 +18,11 @@ setuptools.setup(
         "lxml==4.4.1",
         "requests==2.21.0",
     ],
+    entry_points= {
+        "console_scripts": [
+            "uva_tool=online_judge.uva_tool:main",
+        ]
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
