@@ -15,7 +15,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         "cssselect==1.1.0",
-        "lxml==4.4.1",
+        "lxml==4.6.3",
         "requests==2.21.0",
     ],
     entry_points= {
