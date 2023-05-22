@@ -16,7 +16,7 @@ setuptools.setup(
     install_requires=[
         "cssselect==1.1.0",
         "lxml==4.4.1",
-        "requests==2.21.0",
+        "requests==2.31.0",
     ],
     entry_points= {
         "console_scripts": [
